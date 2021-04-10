@@ -1,1 +1,2 @@
-Archivo para mostrar hello word en la consola
+-Archivo para mostrar hello word en la consola
+-Compilador mingw en visual studio 2019, creado en aplicacion de consola de c++.
