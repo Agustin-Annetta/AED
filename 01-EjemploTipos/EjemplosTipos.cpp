@@ -5,18 +5,57 @@ using namespace std;
 
 int main()
 {
-	int pruebaUno = 1;
-	assert(pruebaUno == 1);
-	double pruebaDos = 2.5;
-	assert(pruebaDos == 2.5);
-	unsigned int pruebaTres = -3;
-	//assert(pruebaTres == 2);   aca salta un error y se detiene el programa
-	assert(pruebaTres == -3);
-	char pruebaCuatro = 'A';
-	assert(pruebaCuatro == 'A');
-	string pruebaCinco = "A";
-	assert(pruebaCinco == "A");
-	bool pruebaSeis = true;
-	assert(pruebaSeis == true);
+	
+	//int 
+	assert(2 == 2);
+	assert(2 + 2 == 4);
+	assert(2 - 2 == 0);
+	assert(2 * 2 == 4);
+	assert(2 / 2 == 1);
+	assert(2 != 3);
+	assert(2 <= 3);
+	assert(2 >= 1);
+
+	//unisigned int 
+	assert(-2 == -2);
+	assert(-2 + -2 == -4);
+	assert(2- - -2 == 0);
+	assert(-2 * -2 == 4);
+	assert(-2 / -2 == 1);
+	assert(-2 != 3);
+	assert(-2 <= 3);
+	assert(2 >= -1);
+
+	//double
+	assert(2.5 == 2.5);
+	assert(2.5 + 2.5 == 5);
+	assert(2.5 - 2.5 == 0);
+	assert(2.5 * 2.5 == 6.25);
+	assert(2.5 / 2.5 == 1);
+	assert(2.5 != 3);
+	assert(2.5 <= 3);
+	assert(2.5 >= 1);
+
+	//bool
+	assert(true == !false);
+	assert((true and true)==true);
+	assert((true and false) == false);
+	assert((true || false) == true);
+
+	//string
+	assert("tres" == "tres");
+	assert("tres" != "dos");
+	assert("tres"s + "tres"s == "trestres");
+	assert("dos" <= "tres");
+	assert("tres" >= "dos");
+	//assert("tres"s.lenght() == 4);
+
+	//char
+	assert('a' == 'a');
+	assert('a' != 'b');
+	assert('a' <= 'b');
+	assert('b' <= 'a');
+	assert('a' +1 == 'b');
+	assert(char(255)+1==0);
 
 }
